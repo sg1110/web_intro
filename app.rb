@@ -15,7 +15,5 @@ require 'shotgun'
   end
 
   get '/cat' do
-    '<div>
-    <img style="border: 10px dashed #FF0000" src="http://bit.ly/1eze8aE">
-    </div>'
+    erb(:index)
   end
