@@ -16,6 +16,6 @@ require 'shotgun'
 
   get '/cat' do
     '<div>
-    <img src="http://bit.ly/1eze8aE">
+    <img style="border: 10px dashed #FF0000" src="http://bit.ly/1eze8aE">
     </div>'
   end
