@@ -1,4 +1,13 @@
-<div>
+  <% if @name %>
   <h1>My Name Is <%=@name%>!!!!</h1>
-  <img style="border: 10px dashed <%=@colour%>" src="http://bit.ly/1eze8aE">
+  <% end %>
+  <form action= "/named-cat">
+    Enter name:<br>
+    <input type="text" name="name">
+    <!-- Enter colour:<br> -->
+    <!-- <input type="text" colour="colour"> -->
+    <input type="submit" value = "Enter" >
+  </form>
+<div style="border: 10px dashed <%=@colour%>">
+  <img src="http://bit.ly/1eze8aE">
 </div>
