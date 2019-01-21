@@ -18,9 +18,13 @@ require 'shotgun'
     erb(:index)
   end
 
-  get '/named-cat' do
-    puts params
+  post '/named-cat' do
+    p params
     @name = params[:name]
-    @colour = params[:colour]
     erb(:index)
+  end
+
+  get '/cat-form' do
+    p params
+    erb(:cat_form)
   end
